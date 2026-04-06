@@ -3,9 +3,9 @@ services:
     image: postgres:15
     restart: always
     environment:
-      POSTGRES_USER: dbt_user       # Optional: defaults to 'postgres'
+      POSTGRES_USER: dbt_user # Optional: defaults to 'postgres'
       POSTGRES_PASSWORD: dbtuser # Required
-      POSTGRES_DB: mydatabase    # Optional: defaults to POSTGRES_USER
+      POSTGRES_DB: mydatabase # Optional: defaults to POSTGRES_USER
     ports:
       - "5433:5432"
     volumes:
